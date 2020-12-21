@@ -1,0 +1,24 @@
+@font-face { 
+    font-family: 'EricaOne-regular';
+    src: url('fonts/EricaOne-regular.ttf');
+}
+
+h1{
+    font-family: 'EricaOne-regular';
+    font-size: 4em;
+    color: $beige;
+    letter-spacing: 3px;
+}
+
+h2{
+    font-family: 'EricaOne-regular';
+    font-size: 2em;
+    color: $beige;
+    letter-spacing: 3px;
+}
+
+p{
+    font-family: sans-serif;
+    color: $beige;
+    line-height: 2;
+}

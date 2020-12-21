@@ -1,0 +1,29 @@
+@media (min-width: 700px){
+
+.zen-resources{
+    top: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    background-color: $blue;
+    display: flex;
+}
+
+.zen-resources h3:first-of-type{
+    display: none;
+}
+
+.zen-resources > ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    flex-direction: row;
+    padding: 0;
+}
+
+.zen-resources > ul > li > a{
+    color: $white;
+    text-decoration: none;
+}
+
+}

@@ -1,3 +1,98 @@
+@font-face {
+  font-family: "EricaOne-regular";
+  src: url("fonts/EricaOne-regular.ttf");
+}
+h1 {
+  font-family: "EricaOne-regular";
+  font-size: 4em;
+  color: #DDD7AA;
+  letter-spacing: 3px;
+}
 
+h2 {
+  font-family: "EricaOne-regular";
+  font-size: 2em;
+  color: #DDD7AA;
+  letter-spacing: 3px;
+}
+
+p {
+  font-family: sans-serif;
+  color: #DDD7AA;
+  line-height: 2;
+}
+
+body {
+  background-color: #001288;
+  color: white;
+}
+
+.intro {
+  min-height: 800px;
+  background-image: url("images/disco-ball.png");
+  background-position-x: center;
+  background-position-y: -200px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100px;
+}
+
+header h1:first-of-type {
+  padding-top: 4em;
+}
+
+header h2:first-of-type {
+  margin-top: 10em;
+  margin-bottom: 0;
+  background-color: #001288;
+  padding-top: 50px;
+}
+
+.intro div:first-of-type, div:first-of-type + div {
+  background-color: #001288;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.intro div:first-of-type + div {
+  background-image: url("images/dancefloor_1.png");
+  background-size: 130%;
+  background-repeat: no-repeat;
+  background-position: top;
+  padding-top: 30em;
+}
+
+.summary > p > a {
+  color: #A751CC;
+}
+
+@media (min-width: 700px) {
+  .zen-resources {
+    top: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    background-color: #243081;
+    display: flex;
+  }
+
+  .zen-resources h3:first-of-type {
+    display: none;
+  }
+
+  .zen-resources > ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .zen-resources > ul > li > a {
+    color: white;
+    text-decoration: none;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
