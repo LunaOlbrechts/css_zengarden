@@ -35,6 +35,7 @@ p {
 }
 
 a {
+  font-family: sans-serif;
   color: #DDD7AA;
 }
 
@@ -48,6 +49,42 @@ li {
   padding-top: 20px;
 }
 
+.preamble > h3 {
+  margin-bottom: 9em;
+}
+
+.preamble > p {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.preamble p:last-child {
+  margin-top: 9em;
+}
+
+@media (min-width: 700px) {
+  .summary p:first-of-type {
+    background-color: #001288;
+    margin-top: 0;
+    padding-top: 20px;
+    width: 500px;
+  }
+
+  .preamble > h3 {
+    margin-bottom: 4em;
+  }
+
+  .preamble > p {
+    width: 400px;
+    margin-left: 13em;
+    margin-right: 40px;
+    font-size: 0.8em;
+  }
+
+  .preamble p:last-child {
+    margin-top: 3em;
+  }
+}
 body {
   background-color: #001288;
   color: white;
@@ -134,19 +171,6 @@ header h2:first-of-type {
   justify-content: center;
 }
 
-.preamble > h3 {
-  margin-bottom: 9em;
-}
-
-.preamble > p {
-  margin-left: 40px;
-  margin-right: 40px;
-}
-
-.preamble p:last-child {
-  margin-top: 9em;
-}
-
 .main {
   background-color: #001288;
   padding-top: 50px;
@@ -169,16 +193,14 @@ header h2:first-of-type {
 .participation > p {
   width: fit-content;
   flex-shrink: 0;
-  height: 100%;
   margin-left: auto;
   margin-right: auto;
   scroll-snap-align: start;
 }
 
 .participation > h3 {
-  width: fit-content;
+  width: -webkit-fill-available;
   flex-shrink: 0;
-  height: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-right: 3em;
@@ -187,10 +209,108 @@ header h2:first-of-type {
 }
 
 @media (min-width: 700px) {
+  .page-wrapper {
+    background-position-x: right;
+    background-image: url("images/lights-desktop.png");
+    background-repeat: no-repeat;
+    background-position-y: -10px;
+    margin: 0;
+  }
+
+  .intro:before {
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: url("images/disco-ball.png") no-repeat;
+    background-position-y: -200px;
+    background-position-x: center;
+    background-size: 150px;
+  }
+
+  .intro div:first-of-type {
+    background-image: url("images/dancefloor-desktop.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding-top: 0;
+    background-position-y: 3em;
+  }
+
+  .intro > div {
+    background-color: #001288;
+    margin: 0;
+    padding-bottom: 8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  header h2:first-of-type {
+    margin-top: 10em;
+    margin-bottom: 0;
+    background-color: #001288;
+    padding-top: 50px;
+  }
+
+  .summary p:last-of-type {
+    height: 196px;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 20%;
+  }
+
+  .preamble {
+    background-image: url("images/album-desktop.png");
+    background-size: 81%;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    padding-top: 7em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .participation {
+    height: 400px;
+    display: flex !important;
+    overflow-x: auto;
+    flex-direction: row !important;
+    scroll-snap-type: x mandatory;
+    margin-top: 15em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 0px;
+    background-color: #A751CC;
+  }
+
+  .participation > p {
+    width: fit-content;
+    flex-shrink: 0;
+    margin-left: auto;
+    margin-right: auto;
+    scroll-snap-align: start;
+  }
+
+  .participation > h3 {
+    width: -webkit-fill-available;
+    text-align: center;
+    flex-shrink: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 3em;
+    padding-left: 1.6em;
+    scroll-snap-align: start;
+  }
+}
+@media (min-width: 700px) {
   .zen-resources {
     top: 0;
     right: 0;
     left: 0;
+    height: 70px;
     position: fixed;
     background-color: #243081;
     display: flex;
@@ -204,13 +324,17 @@ header h2:first-of-type {
     display: flex;
     list-style: none;
     align-items: center;
+    justify-content: space-between;
     flex-direction: row;
     padding: 0;
+    width: 700px;
+    margin-left: 30px;
   }
 
   .zen-resources > ul > li > a {
-    color: white;
+    color: #A751CC;
     text-decoration: none;
+    font-size: 0.8em;
   }
 }
 

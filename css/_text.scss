@@ -36,6 +36,7 @@ p{
 }
 
 a{
+    font-family: sans-serif;
     color: $beige;
 }
 
@@ -47,4 +48,44 @@ li{
     background-color: $darkblue;
     margin-top: 16em;
     padding-top: 20px;
+}
+
+.preamble > h3{
+    margin-bottom: 9em;
+}
+
+.preamble > p{ 
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.preamble p:last-child{
+    margin-top: 9em;
+}
+
+@media (min-width: 700px){
+
+    // Summary
+    .summary p:first-of-type{
+        background-color: $darkblue;
+        margin-top: 0;
+        padding-top: 20px;
+        width: 500px;
+    }
+
+    // Preamble
+    .preamble > h3{
+        margin-bottom: 4em;
+    }
+
+    .preamble > p{ 
+        width: 400px;
+        margin-left: 13em;
+        margin-right: 40px;
+        font-size: 0.8em;
+    }
+
+    .preamble p:last-child{
+        margin-top: 3em;
+    }
 }
