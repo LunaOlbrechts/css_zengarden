@@ -58,6 +58,7 @@ header h2:first-of-type{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .summary p:last-of-type{
@@ -174,7 +175,7 @@ header h2:first-of-type{
 
     .preamble{
         background-image: url("images/album-desktop.png");
-        background-size: 81%;
+        background-size: 96%;
         background-repeat: no-repeat;
         background-position-y: center;
         background-position-x: center;
@@ -215,5 +216,27 @@ header h2:first-of-type{
         padding-right: 3em;
         padding-left: 1.6em;
         scroll-snap-align: start;
+    }
+
+    .main{
+        margin-bottom: 200px;
+    }
+}
+
+@media (min-width: 850px){
+    .preamble{
+        background-size: 91%;
+    }
+}
+
+@media (min-width: 950px){
+    .preamble{
+        background-size: 80%;
+    }
+}
+
+@media (min-width: 950px){
+    .preamble{
+        background-size: 70%;
     }
 }

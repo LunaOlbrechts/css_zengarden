@@ -37,7 +37,7 @@ p{
 
 a{
     font-family: sans-serif;
-    color: $beige;
+    color: #A751CC;
 }
 
 li{ 
@@ -51,16 +51,31 @@ li{
 }
 
 .preamble > h3{
-    margin-bottom: 9em;
+    margin-bottom: 12em;
 }
 
 .preamble > p{ 
     margin-left: 40px;
     margin-right: 40px;
+    width: 300px;
 }
 
 .preamble p:last-child{
     margin-top: 9em;
+}
+
+@media (min-width: 450px){
+    .preamble > h3{
+        margin-bottom: 3em;
+    }
+    
+    .preamble > p{ 
+        width: 400px;
+    }
+    
+    .preamble p:last-child{
+        margin-top: 0;
+    }
 }
 
 @media (min-width: 700px){

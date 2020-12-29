@@ -1,0 +1,29 @@
+@media (min-width: 700px){
+    .wrapper{
+        display: flex;
+        background-color: #243081;
+        justify-content: space-between;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .wrapper > div > h3{
+        font-family: sans-serif;
+        font-size: 1.2em;
+        color: whitesmoke;
+    }
+
+    .wrapper > div > nav{ 
+        font-size: 0.8em;
+    }
+
+    .wrapper > div > nav > ul{
+        padding-left: 15px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        column-count: 2;
+        height: 70px;       
+        column-gap: 30px; 
+    }
+}
